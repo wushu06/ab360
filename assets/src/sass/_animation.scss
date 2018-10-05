@@ -1,0 +1,244 @@
+@-webkit-keyframes pulse {
+  from,
+  40% {
+    background: black;
+  }
+  to {
+    background: red;
+  }
+}
+@-webkit-keyframes show {
+  from, 40% {
+    opacity: 0;
+  }
+  41%, to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  from,
+  40% {
+    background: black;
+  }
+  to {
+    background: red;
+  }
+}
+@keyframes show {
+  from, 40% {
+    opacity: 0;
+  }
+  41%, to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes index {
+  0%, 100% {z-index: 3}
+  33.3% {z-index: 2}
+  66.6% {z-index: 1}
+}
+
+
+
+.fadeInLeftx {
+  -webkit-animation-name: fadeInLeftx;
+  animation-name: fadeInLeftx;
+}
+
+@keyframes fadeInLeftx {
+  0% {
+
+
+    width:0;
+
+  }
+  50% {
+
+
+    width:150px;
+
+  }
+  100% {
+
+
+    width: 250px;
+
+  }
+}
+/*
+ * show -viewport
+ */
+.animate-title {
+  position: relative;
+  opacity: 1;
+  top: 0;
+  transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.animate-reverse {
+  top:50px;
+  opacity:0;
+
+}
+/*
+ * falling
+ */
+.faa-falling.animated,
+.faa-falling.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-falling {
+  -webkit-animation: falling 2s linear infinite;
+  animation: falling 2s linear infinite;
+  height: 60px;
+  margin-top: -35px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+.faa-falling-2.animated,
+.faa-falling-2.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-falling-2 {
+  -webkit-animation: falling-2 2s linear infinite;
+  animation: falling-2 2s linear infinite;
+  height: 50px;
+  margin-top: -15px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+.faa-falling-3.animated,
+.faa-falling-3.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-falling-3 {
+  -webkit-animation: falling-3 2s linear infinite;
+  animation: falling-3 2s linear infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.faa-falling.animated.faa-fast,
+.faa-falling.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-fast {
+  -webkit-animation: falling 1s linear infinite;
+  animation: falling 1s linear infinite;
+}
+
+.faa-falling.animated.faa-slow,
+.faa-falling.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-slow {
+  -webkit-animation: falling 3s linear infinite;
+  animation: falling 3s linear infinite;
+
+}
+
+
+@keyframes falling {
+  0% {
+
+    opacity: 0;
+  }
+
+  50% {
+
+    opacity: 1;
+  }
+
+  100% {
+
+    opacity: 0;
+  }
+}
+@keyframes falling-2 {
+  0% {
+
+    opacity: 0;
+  }
+
+  50% {
+
+    opacity: 1;
+  }
+
+  100% {
+
+    opacity: 0;
+  }
+}
+
+@keyframes falling-3 {
+  0% {
+
+    opacity: 0;
+  }
+
+  50% {
+
+    opacity: 1;
+  }
+
+  100% {
+
+    opacity: 0;
+  }
+}
+
+
+
+/* BURST */
+
+@-webkit-keyframes burst {
+  0% {
+    opacity: .6;
+  }
+
+  50% {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes burst {
+  0% {
+    opacity: .6;
+  }
+
+  50% {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.faa-burst.animated,
+.faa-burst.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-burst {
+  -webkit-animation: burst 2s infinite linear;
+  animation: burst 2s infinite linear;
+}
+
+.faa-burst.animated.faa-fast,
+.faa-burst.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-fast {
+  -webkit-animation: burst 1s infinite linear;
+  animation: burst 1s infinite linear;
+}
+
+.faa-burst.animated.faa-slow,
+.faa-burst.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-slow {
+  -webkit-animation: burst 3s infinite linear;
+  animation: burst 3s infinite linear;
+}

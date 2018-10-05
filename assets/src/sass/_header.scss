@@ -1,0 +1,27 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 9;
+  display: table;
+  .navbar {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+    .container-fluid {
+      .navbar-header {
+        .img-logo {
+          img {
+            display: inline-block;
+            width: auto;
+            height: 50px;
+          }
+
+        }
+      }
+    }
+  }
+}
